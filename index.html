@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto my-10 p-5 bg-white rounded-lg shadow-lg">
+        <h1 class="text-2xl font-bold text-center mb-6">Tuition Class Student Management</h1>
+        <form id="studentForm" class="space-y-4">
+            <div>
+                <label for="name" class="block text-gray-700">Name</label>
+                <input type="text" id="name" placeholder="Enter student's name" class="w-full p-2 border border-gray-300 rounded-md" required>
+            </div>
+
+            <div>
+                <label for="examYear" class="block text-gray-700">Exam Year</label>
+                <input type="text" id="examYear" placeholder="Enter exam year" class="w-full p-2 border border-gray-300 rounded-md" required>
+            </div>
+
+            <div>
+                <label for="whatsapp" class="block text-gray-700">WhatsApp Number</label>
+                <input type="text" id="whatsapp" placeholder="Enter WhatsApp number" class="w-full p-2 border border-gray-300 rounded-md" required>
+            </div>
+
+            <div>
+                <label for="idNumber" class="block text-gray-700">ID Number</label>
+                <input type="text" id="idNumber" placeholder="Enter ID number" class="w-full p-2 border border-gray-300 rounded-md" required>
+            </div>
+
+            <div>
+                <label for="idPicture" class="block text-gray-700">Upload ID Picture</label>
+                <input type="file" id="idPicture" accept="image/*" class="w-full p-2 border border-gray-300 rounded-md" required>
+            </div>
+
+            <div>
+                <label for="address" class="block text-gray-700">Address</label>
+                <textarea id="address" placeholder="Enter address" class="w-full p-2 border border-gray-300 rounded-md" required></textarea>
+            </div>
+
+            <div>
+                <label for="school" class="block text-gray-700">School</label>
+                <input type="text" id="school" placeholder="Enter school name" class="w-full p-2 border border-gray-300 rounded-md" required>
+            </div>
+
+            <div>
+                <label for="district" class="block text-gray-700">District</label>
+                <input type="text" id="district" placeholder="Enter district" class="w-full p-2 border border-gray-300 rounded-md" required>
+            </div>
+
+            <button type="submit" class="w-full p-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('studentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Here, you can use AJAX/fetch API to send the form data to a server
+            alert('Form submitted!'); // This will be replaced with actual email sending logic
+        });
+    </script>
+</body>
+</html>
